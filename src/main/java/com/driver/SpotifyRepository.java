@@ -121,6 +121,7 @@ public class SpotifyRepository {
         }
         Playlist playlist = new Playlist(title);
         playlists.add(playlist);
+        playlistListenerMap.put(playlist,new ArrayList<>());
 
         List<Song> songList = new ArrayList<>();
         for (Song song: songs){
@@ -160,6 +161,7 @@ public class SpotifyRepository {
         }
         Playlist playlist = new Playlist(title);
         playlists.add(playlist);
+        playlistListenerMap.put(playlist,new ArrayList<>());
 
         List<Song> songList = new ArrayList<>();
         for (Song song: songs){
